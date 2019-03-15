@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; */
+
+    
+/* HTML5 display-role reset for older browsers */
+    
+    
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    width=90%;
+    height=40%;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle-content .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+    
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Starting New CSS Project Code*/
+
+
+.header-text-content{
+display: grid;
+grid-area:800px;
+align-content:center;
+float:left id=1 id=2;
+
+}
+
+.box{
+	display: grid;
+	grid-area: 5000px;
+	grid-template-columns: auto auto auto auto auto;
+	grid-template-rows: fr1 fr1;
+	border: 2px solid #000;
+	margin: 30px 30px 30px 30px;
+	grid-gap: 10px;
+	grid-auto-flow: dense;
+}
+
+
+.box> * {
+	border: 2px solid antiquewhite;
+	background-color: #ffec99;
+	padding: 10px;
+}
+
+.container{
+	display: grid;
+	grid-area: 8000px;
+	/*grid-template-columns: 50% fr1;
+	grid-template-rows: fr1 fr1;*/
+	border: 2px solid #000;
+	grid-gap: 10px;
+	grid-auto-flow: dense;
+}
+
+
+.container{
+	
+alignment-baseline: middle
+}
+
+
+.boxes-container{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-template-rows: auto auto auto auto auto;
+	grid-gap: 1%;
+	margin: 1% 1% 1% 1%;
+	width: 80%;
+	height:90%;
+	padding: 1%;
+	grid-auto-flow: dense;
+	align-content: center;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+
+.boxes-container> * {
+	justify-content: auto;
+	background-color: beige;
+	
+}
+
+
+	
+
+.middle-content{
+	display: grid;
+	grid-area: 800px;
+	grid-template-columns: 50% fr1;
+	grid-template-rows: fr1 fr1;
+	border: 2px solid #000;
+	margin: 60px 100PX 30px;
+	grid-gap: 10px;
+	grid-auto-flow: dense;	
+}
+
+.middle-content> * {
+	display:grid;
+	border: 2px solid antiquewhite;
+	background-color: #ffec99;
+	padding: 10px;
+	margin-left: 600px;
+}
+
+	
+.button-content{
+	display: grid;
+	grid-area: 8000px;
+	grid-template-columns: fr1 fr1;
+	grid-template-rows: fr1 fr1;
+	border: 2px solid #000;
+	margin: 60px 30px 30px 30px;
+	grid-gap: 10px;
+	grid-auto-flow: dense;
+	
+	
+}
+.button-content> * {
+	border: 2px solid antiquewhite;
+	background-color: #ffec99;
+	padding: 10px;
+	margin-left: 1000px;
+	margin-right:1000px;
+}
+
+
+.text-container{
+display:inline-flex;
+font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+align-content: center;
+font-size: 14px; 
+width:300px;
+height:300px;
+align}
+
+p {
+font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+align-content: center;
+font-size: 14px;	
+width:300px;
+height:300px;	
+}
+
+.boxes-container{
+	display: grid;
+	grid-area: 800px;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto auto auto;
+	border: 2px solid #000;
+	margin: 1% 1% 1% 1%;
+	grid-gap: 10px;
+	grid-auto-flow: dense;	
+	
+}
+
+.boxes-container> * {
+	display:grid;
+	border: 2px solid antiquewhite;
+	background-color: #ffec99;
+	padding: 10px;
+	margin-left:0px;
+	
+}
+
+
+.box1{
+background-color: aqua;
+float: left;
+}
+
+.box2{
+background-color: darkgoldenrod;
+float: left;
+}
+
+.box3{
+background-color: powderblue;
+float: left;	
+	
+}
+
+.box4{
+background-color: orange;			
+float: left;
+}
+
+.box5{
+background-color: red;	
+float: left:
+}
+
+.box6{
+background-color: green;	
+float: left;
+
+}
+
+.box7{
+background-color: mediumorchid;	
+float: left;
+}
+
+.box8{
+background-color: lightpink;	
+float: left;	
+}
+
+.box9{
+background-color: purple;	
+float: left;
+}
+
+.box10{
+background-color: mediumaquamarine;	
+float: left;	
+}
+
+
+
+.col-md-4{
+display:grid;
+width: 50px;
+height:50px;
+align-items: center;
+font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+font-size: 14px;
+font-weight: 200;
+border:dotted;
+padding:20px;
+text-align: justify;	
+
+}
